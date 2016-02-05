@@ -49,3 +49,11 @@ class TestRemote(agate.AgateTestCase):
         self.assertColumnTypes(table, [agate.Number, agate.Text, agate.Boolean, agate.Date, agate.DateTime, agate.TimeDelta])
 
         self.assertRows(table, self.table.rows)
+
+    def test_from_url_json_keyed(self):
+        table = agate.Table.from_url('https://raw.githubusercontent.com/onyxfish/agate/master/examples/test_key.json', callback=agate.Table.from_json, key='data')
+
+        self.assertColumnNames(table, self.table.column_names)
+        self.assertColumnTypes(table, [agate.Number, agate.Text, agate.Boolean, agate.Date, agate.DateTime, agate.TimeDelta])
+
+        self.assertRows(table, self.table.rows)
