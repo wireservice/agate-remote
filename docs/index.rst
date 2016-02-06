@@ -31,8 +31,17 @@ Calling :func:`.patch` attaches all the methods of :class:`.TableRemote` to :cla
 
 .. code-block:: python
 
-  table = agate.Table.from_url('TKTK')
+  table = agate.Table.from_url('https://raw.githubusercontent.com/onyxfish/agate/master/examples/test.csv')
   print(table)
+
+agate-remote also let's you create an :class:`Archive`, which is a reference to a group of tables with a known path structure.
+
+.. code-block:: python
+
+    archive = agateremote.Archive('https://github.com/vincentarelbundock/Rdatasets/raw/master/csv/')
+
+    table = archive.get_table('sandwich/PublicSchools.csv')
+    print(table)
 
 ===
 API
@@ -41,6 +50,9 @@ API
 .. autofunction:: agateremote.patch
 
 .. autoclass:: agateremote.table_remote.TableRemote
+    :members:
+
+.. autoclass:: agateremote.archive.Archive
     :members:
 
 Authors

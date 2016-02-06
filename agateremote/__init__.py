@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from agateremote.archive import Archive
+
 def patch():
     """
     Patch the features of this library onto agate's core
