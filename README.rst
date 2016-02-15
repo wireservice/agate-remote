@@ -18,11 +18,11 @@
     :target: https://pypi.python.org/pypi/agate-remote
     :alt: Support Python versions
 
-agate-remote adds read support for remote files to `agate <https://github.com/onyxfish/agate>`_.
+agate-remote adds read support for remote files to `agate <https://github.com/wireservice/agate>`_.
 
 Important links:
 
 * agate             http://agate.rtfd.org
 * Documentation:    http://agate-remote.rtfd.org
-* Repository:       https://github.com/onyxfish/agate-remote
-* Issues:           https://github.com/onyxfish/agate-remote/issues
+* Repository:       https://github.com/wireservice/agate-remote
+* Issues:           https://github.com/wireservice/agate-remote/issues
