@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/onyxfish/agate-remote.png
-    :target: https://travis-ci.org/onyxfish/agate-remote
+.. image:: https://travis-ci.org/wireservice/agate-remote.png
+    :target: https://travis-ci.org/wireservice/agate-remote
     :alt: Build status
 
 .. image:: https://img.shields.io/pypi/dw/agate-remote.svg
