@@ -18,7 +18,7 @@ For details on development or supported platforms see the `agate documentation <
 Usage
 =====
 
-agate-remote uses a monkey patching pattern to add read for xls and xlsx files support to all :class:`agate.Table <agate.table.Table>` instances.
+agate-remote uses a monkey patching pattern to add read support for remote files to all :class:`agate.Table <agate.table.Table>` instances.
 
 .. code-block:: python
 
