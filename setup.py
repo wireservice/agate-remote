@@ -9,7 +9,7 @@ install_requires = [
 
 setup(
     name='agate-remote',
-    version='0.1.1',
+    version='0.1.2',
     description='agate-remote adds read support for remote files to agate.',
     long_description=open('README.rst').read(),
     author='Christopher Groskopf',
