@@ -22,17 +22,17 @@ agate-remote uses a monkey patching pattern to add read support for remote files
 
 .. code-block:: python
 
-  import agate
-  import agateremote
+    import agate
+    import agateremote
 
-  agateremote.patch()
+    agateremote.patch()
 
 Calling :func:`.patch` attaches all the methods of :class:`.TableRemote` to :class:`agate.Table <agate.table.Table>`.
 
 .. code-block:: python
 
-  table = agate.Table.from_url('https://raw.githubusercontent.com/onyxfish/agate/master/examples/test.csv')
-  print(table)
+    table = agate.Table.from_url('https://raw.githubusercontent.com/onyxfish/agate/master/examples/test.csv')
+    print(table)
 
 agate-remote also let's you create an :class:`Archive`, which is a reference to a group of tables with a known path structure.
 

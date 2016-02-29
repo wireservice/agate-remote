@@ -3,7 +3,7 @@
 from setuptools import setup
 
 install_requires = [
-    'agate>=1.2.2',
+    'agate>=1.3.0',
     'requests>=2.9.1'
 ]
 
