@@ -21,7 +21,7 @@ class TableRemote(object):
             :meth:`agate.Table.from_csv` or :meth:`agate.Table.from_json`, but
             it could also be a method provided by an extension.
         :param binary:
-            If :code:`True` the downloaded data will be processed as a string,
+            If :code:`False` the downloaded data will be processed as a string,
             otherwise it will be treated as binary data. (e.g. for Excel files)
         """
         r = requests.get(url)

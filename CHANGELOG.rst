@@ -1,7 +1,7 @@
 0.1.2
 -----
 
-
+* Fix docstring for binary argument. (#8)
 
 0.1.1
 -----
