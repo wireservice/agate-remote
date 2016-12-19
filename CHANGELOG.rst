@@ -1,5 +1,9 @@
-0.2.0
+0.2.1
 -----
+
+
+0.2.0 - December 19, 2016
+-------------------------
 
 * Remove deprecated monkeypatching pattern.
 * Upgrade agate requirement to version ``1.5.0``.
