@@ -25,9 +25,7 @@ agate-remote uses a monkey patching pattern to add read support for remote files
     import agate
     import agateremote
 
-    agateremote.patch()
-
-Calling :func:`.patch` attaches all the methods of :class:`.TableRemote` to :class:`agate.Table <agate.table.Table>`.
+Importing agate-remote adds methods to :class:`agate.Table <agate.table.Table>`.
 
 .. code-block:: python
 
@@ -47,9 +45,7 @@ agate-remote also let's you create an :class:`Archive`, which is a reference to 
 API
 ===
 
-.. autofunction:: agateremote.patch
-
-.. autoclass:: agateremote.table_remote.TableRemote
+.. autofunction:: agateremote.table_remote.from_url
     :members:
 
 .. autoclass:: agateremote.archive.Archive
