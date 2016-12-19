@@ -3,8 +3,6 @@
 import agate
 import agateremote
 
-agateremote.patch()
-
 table = agate.Table.from_url('https://raw.githubusercontent.com/onyxfish/agate/master/examples/test.csv')
 
 print(table)
