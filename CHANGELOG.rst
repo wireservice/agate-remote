@@ -1,6 +1,8 @@
-0.1.2
+0.2.0
 -----
 
+* Remove deprecated monkeypatching pattern.
+* Upgrade agate requirement to version ``1.5.0``.
 * Fix docstring for binary argument. (#8)
 
 0.1.1

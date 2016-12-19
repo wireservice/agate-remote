@@ -3,13 +3,13 @@
 from setuptools import setup
 
 install_requires = [
-    'agate>=1.3.0',
+    'agate>=1.5.0',
     'requests>=2.9.1'
 ]
 
 setup(
     name='agate-remote',
-    version='0.1.2',
+    version='0.2.0',
     description='agate-remote adds read support for remote files to agate.',
     long_description=open('README.rst').read(),
     author='Christopher Groskopf',

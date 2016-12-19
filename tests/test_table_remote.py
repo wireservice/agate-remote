@@ -9,8 +9,6 @@ except ImportError:
 import agate
 import agateremote
 
-agateremote.patch()
-
 class TestRemote(agate.AgateTestCase):
     def setUp(self):
         self.rows = (
