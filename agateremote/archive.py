@@ -21,6 +21,9 @@ class Archive(object):
             raise AttributeError('Table.from_url is missing. Did you forget to run agateremote.patch()?')
 
     def get_table(self, key):
+        """
+        Download a remote file relative to the archive's root and return it as a table.
+        """
         url = self._url_func(self._root, key)
 
         return agate.Table.from_url(url, callback=self._callback)
