@@ -2,11 +2,6 @@
 
 from setuptools import setup
 
-install_requires = [
-    'agate>=1.5.0',
-    'requests>=2.9.1'
-]
-
 setup(
     name='agate-remote',
     version='0.2.1',
@@ -37,5 +32,18 @@ setup(
     packages=[
         'agateremote'
     ],
-    install_requires=install_requires
+    install_requires=[
+        'agate>=1.5.0',
+        'requests>=2.9.1'
+    ],
+    extras_require={
+        'test': [
+            'nose>=1.1.2',
+        ],
+        'docs': [
+            'Sphinx>=1.2.2',
+            'sphinx_rtd_theme>=0.1.6',
+        ],
+    }
+
 )
