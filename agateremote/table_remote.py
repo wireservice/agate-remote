@@ -8,7 +8,7 @@ import agate
 import requests
 import six
 
-def from_url(cls, url, callback=agate.Table.from_csv, requests_encoding=None, binary=False, **kwargs):
+def from_url(cls, url, callback=agate.Table.from_csv, binary=False, requests_encoding=None, **kwargs):
     """
     Download a remote file and pass it to a :class:`.Table` parser.
 

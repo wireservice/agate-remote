@@ -1,6 +1,7 @@
 0.2.1
 -----
 
+* Add ``requests_encoding`` keyword argument to ``from_url``.
 
 0.2.0 - December 19, 2016
 -------------------------
