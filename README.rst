@@ -1,8 +1,8 @@
-.. image:: https://travis-ci.org/wireservice/agate-remote.png
-    :target: https://travis-ci.org/wireservice/agate-remote
+.. image:: https://github.com/wireservice/agate-remote/workflows/CI/badge.svg
+    :target: https://github.com/wireservice/agate-remote/actions
     :alt: Build status
 
-.. image:: https://img.shields.io/pypi/dw/agate-remote.svg
+.. image:: https://img.shields.io/pypi/dm/agate-remote.svg
     :target: https://pypi.python.org/pypi/agate-remote
     :alt: PyPI downloads
 
