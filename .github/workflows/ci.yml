@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
-        python-version: [2.7, 3.6, 3.7, 3.8, 3.9, pypy-3.6, pypy-3.7]
+        python-version: [3.6, 3.7, 3.8, 3.9, pypy-3.6, pypy-3.7]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -21,7 +21,5 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-      - env:
-          PKG_CONFIG_PATH: /usr/local/opt/icu4c/lib/pkgconfig
-        run: pip install .[test]
+      - run: pip install .[test]
       - run: nosetests
