@@ -21,11 +21,7 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-      - name: Install pkg-config (Linux)
-        if: matrix.packages && matrix.os == 'ubuntu-latest'
-        run: sudo apt install pkg-config
-      - name: Install pkg-config (macOS)
-        if: matrix.packages && matrix.os == 'macos-latest'
-        run: brew install pkg-config
-      - run: pip install .[test]
+      - env:
+          PKG_CONFIG_PATH: /usr/local/opt/icu4c/lib/pkgconfig
+        run: pip install .[test]
       - run: nosetests
