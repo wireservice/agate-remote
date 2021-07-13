@@ -1,12 +1,14 @@
-#!/usr/bin/env python
+from setuptools import find_packages, setup
 
-from setuptools import setup
+with open('README.rst') as f:
+    long_description = f.read()
 
 setup(
     name='agate-remote',
     version='0.2.1',
     description='agate-remote adds read support for remote files to agate.',
-    long_description=open('README.rst').read(),
+    long_description=long_description,
+    long_description_content_type='text/x-rst',
     author='Christopher Groskopf',
     author_email='chrisgroskopf@gmail.com',
     url='http://agate-remote.readthedocs.org/',
@@ -28,9 +30,7 @@ setup(
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    packages=[
-        'agateremote'
-    ],
+    packages=find_packages(exclude=['tests', 'tests.*']),
     install_requires=[
         'agate>=1.5.0',
         'requests>=2.9.1',
