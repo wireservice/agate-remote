@@ -1,5 +1,5 @@
-0.2.1
------
+0.2.1 - July 13, 2021
+---------------------
 
 * Add ``requests_encoding`` keyword argument to ``from_url``.
 
