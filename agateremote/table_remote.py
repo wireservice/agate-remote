@@ -41,4 +41,5 @@ def from_url(cls, url, callback=agate.Table.from_csv, binary=False, requests_enc
 
     return callback(content, **kwargs)
 
+
 agate.Table.from_url = classmethod(from_url)
