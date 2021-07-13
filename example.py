@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import agate
+
 import agateremote
 
 table = agate.Table.from_url('https://raw.githubusercontent.com/onyxfish/agate/master/examples/test.csv')

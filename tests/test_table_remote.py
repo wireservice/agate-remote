@@ -7,7 +7,9 @@ except ImportError:
     import unittest
 
 import agate
+
 import agateremote
+
 
 class TestRemote(agate.AgateTestCase):
     def setUp(self):

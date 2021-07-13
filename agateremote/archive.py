@@ -4,6 +4,7 @@ import os
 
 import agate
 
+
 def default_url_func(root, key):
     return os.path.join(root, key)
 
