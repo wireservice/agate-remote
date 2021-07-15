@@ -31,7 +31,7 @@ class TestRemote(agate.AgateTestCase):
 
     def test_from_url_csv(self):
         url = 'https://raw.githubusercontent.com/onyxfish/agate/master/examples/test.csv'
-        table = agate.Table.from_url(url, requests_encoding='utf-8')
+        table = agate.Table.from_url(url)
 
         self.assertColumnNames(table, self.table.column_names)
         self.assertColumnTypes(table, [agate.Number, agate.Text, agate.Boolean,
