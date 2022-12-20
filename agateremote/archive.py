@@ -9,7 +9,7 @@ def default_url_func(root, key):
     return os.path.join(root, key)
 
 
-class Archive(object):
+class Archive:
     """
     Allows for fast access to respository of remote datasets with a known path
     structure.

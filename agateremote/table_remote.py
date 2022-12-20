@@ -6,7 +6,7 @@ This module contains the Remote extension to :class:`Table <agate.table.Table>`.
 
 import agate
 import requests
-import six
+from io import BytesIO, StringIO
 
 
 def from_url(cls, url, callback=agate.Table.from_csv, binary=False, requests_encoding=None, **kwargs):
@@ -32,12 +32,9 @@ def from_url(cls, url, callback=agate.Table.from_csv, binary=False, requests_enc
         r.encoding = requests_encoding
 
     if binary:
-        content = six.BytesIO(r.content)
+        content = BytesIO(r.content)
     else:
-        if six.PY2:
-            content = six.StringIO(r.content.decode('utf-8'))
-        else:
-            content = six.StringIO(r.text)
+        content = StringIO(r.text)
 
     return callback(content, **kwargs)
 
