@@ -4,9 +4,10 @@
 This module contains the Remote extension to :class:`Table <agate.table.Table>`.
 """
 
+from io import BytesIO, StringIO
+
 import agate
 import requests
-from io import BytesIO, StringIO
 
 
 def from_url(cls, url, callback=agate.Table.from_csv, binary=False, requests_encoding=None, **kwargs):
