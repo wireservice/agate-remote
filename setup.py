@@ -46,5 +46,4 @@ setup(
             'sphinx_rtd_theme>=0.1.6',
         ],
     }
-
 )
