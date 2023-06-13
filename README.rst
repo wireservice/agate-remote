@@ -22,7 +22,7 @@ agate-remote adds read support for remote files to `agate <https://github.com/wi
 
 Important links:
 
-* agate             http://agate.rtfd.org
-* Documentation:    http://agate-remote.rtfd.org
+* agate             https://agate.rtfd.org
+* Documentation:    https://agate-remote.rtfd.org
 * Repository:       https://github.com/wireservice/agate-remote
 * Issues:           https://github.com/wireservice/agate-remote/issues
