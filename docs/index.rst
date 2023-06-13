@@ -1,6 +1,6 @@
-=====================
+======================
 agate-remote |release|
-=====================
+======================
 
 .. include:: ../README.rst
 
@@ -46,7 +46,6 @@ API
 ===
 
 .. autofunction:: agateremote.table_remote.from_url
-    :members:
 
 .. autoclass:: agateremote.archive.Archive
     :members:
