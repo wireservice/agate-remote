@@ -10,6 +10,6 @@ class TestArchive(agate.AgateTestCase):
     def test_get_table(self):
         table = self.archive.get_table('sandwich/PublicSchools.csv')
 
-        self.assertColumnNames(table, ('a', 'Expenditure', 'Income'))
+        self.assertColumnNames(table, ('rownames', 'Expenditure', 'Income'))
         self.assertColumnTypes(table, [agate.Text, agate.Number, agate.Number])
         self.assertEqual(len(table.rows), 51)
