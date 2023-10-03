@@ -20,7 +20,7 @@ class Archive:
         self._callback = callback
 
         if not hasattr(agate.Table, 'from_url'):
-            raise AttributeError('Table.from_url is missing. Did you forget to run agateremote.patch()?')
+            raise AttributeError('Table.from_url is missing. Did you forget to import agateremote?')
 
     def get_table(self, key):
         """

@@ -16,8 +16,6 @@ print(table)
 
 # import agateexcel
 #
-# agateexcel.patch()
-#
 # url = 'https://github.com/onyxfish/agate-excel/raw/master/examples/test.xls'
 # table = agate.Table.from_url(url, callback=agate.Table.from_xls, binary=True)
 #
