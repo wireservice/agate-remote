@@ -2,6 +2,10 @@
     :target: https://github.com/wireservice/agate-remote/actions
     :alt: Build status
 
+.. image:: https://coveralls.io/repos/wireservice/agate-remote/badge.svg?branch=master
+    :target: https://coveralls.io/r/wireservice/agate-remote
+    :alt: Coverage status
+
 .. image:: https://img.shields.io/pypi/dm/agate-remote.svg
     :target: https://pypi.python.org/pypi/agate-remote
     :alt: PyPI downloads
