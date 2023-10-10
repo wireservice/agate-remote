@@ -1,3 +1,9 @@
+Unreleased
+----------
+
+* Add Python 3.12 support.
+* Drop Python 3.7 support (end-of-life was June 27, 2023).
+
 0.2.1 - July 13, 2021
 ---------------------
 
