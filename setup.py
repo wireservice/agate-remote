@@ -5,7 +5,7 @@ with open('README.rst') as f:
 
 setup(
     name='agate-remote',
-    version='0.2.1',
+    version='0.2.2',
     description='agate-remote adds read support for remote files to agate.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
