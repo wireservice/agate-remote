@@ -5,7 +5,7 @@ with open('README.rst') as f:
 
 setup(
     name='agate-remote',
-    version='0.2.2',
+    version='0.2.3',
     description='agate-remote adds read support for remote files to agate.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
@@ -21,11 +21,11 @@ setup(
         'Natural Language :: English',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'Programming Language :: Python :: 3.14',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Topic :: Scientific/Engineering :: Information Analysis',
