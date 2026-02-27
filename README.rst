@@ -2,8 +2,8 @@
     :target: https://github.com/wireservice/agate-remote/actions
     :alt: Build status
 
-.. image:: https://coveralls.io/repos/wireservice/agate-remote/badge.svg?branch=master
-    :target: https://coveralls.io/r/wireservice/agate-remote
+.. image:: https://codecov.io/github/wireservice/agate-remote/graph/badge.svg
+    :target: https://codecov.io/github/wireservice/agate-remote
     :alt: Coverage status
 
 .. image:: https://img.shields.io/pypi/dm/agate-remote.svg
